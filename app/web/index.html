@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>社区棋牌室 · 桌台预约与牌具清点</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="logo"></span>
+    <div>
+      <h1>社区棋牌室</h1>
+      <small>桌台预约 · 牌具清点 · 计时结算</small>
+    </div>
+  </div>
+  <div class="clock" id="clock">--:--</div>
+  <div class="notices" id="notices"></div>
+</header>
+
+<nav class="tabs" id="tabs">
+  <button data-view="calendar" class="active">桌台日历</button>
+  <button data-view="floor">场地平面图</button>
+  <button data-view="timer">计时/续时</button>
+  <button data-view="open">开场清单</button>
+  <button data-view="close">散场核验</button>
+  <button data-view="cleaning">清洁队列</button>
+  <button data-view="inventory">牌具库存</button>
+  <button data-view="review">结算复核</button>
+</nav>
+
+<main id="main"></main>
+
+<div class="modal-mask hidden" id="modalMask">
+  <div class="modal" id="modal"></div>
+</div>
+
+<div class="toast hidden" id="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
